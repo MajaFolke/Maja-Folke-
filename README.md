@@ -1,65 +1,64 @@
-[README.md](https://github.com/user-attachments/files/34009310/README.md)[index.html](https://github.com/user-attachments/files/34009309/index.html)
+[<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b0c10">
+<title>LOOPWALL Studio</title>
+<style>
+:root{color-scheme:dark;--bg:#0b0c10;--panel:#14151b;--line:#292b35;--muted:#999cac;--lime:#c9ff58}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#f6f7fb;font:14px/1.45 Inter,system-ui,-apple-system,Segoe UI,sans-serif}button,select{font:inherit}button{cursor:pointer}.app{min-height:100vh;display:grid;grid-template-columns:290px minmax(0,1fr)}aside{background:#101116;border-right:1px solid var(--line);padding:22px 18px;display:flex;flex-direction:column;gap:23px}.brand{display:flex;align-items:center;gap:10px;font-weight:850;letter-spacing:.12em}.mark{background:var(--lime);color:#10110a;border-radius:8px;width:29px;height:29px;display:grid;place-items:center;font-size:18px}.eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.16em;font-weight:800;color:var(--muted);margin-bottom:10px}.section{display:flex;flex-direction:column;gap:10px}.section-head{display:flex;justify-content:space-between;align-items:center;gap:8px}h1,h2,p{margin:0}h1{font-size:clamp(28px,4vw,43px);line-height:1.04;letter-spacing:-.05em}h2{font-size:13px}.sub,.hint{color:var(--muted);font-size:11px}.button{border:1px solid var(--line);background:#20212a;color:#f7f7fa;border-radius:10px;padding:10px 12px;transition:.15s}.button:hover{background:#2b2c37}.button.primary{background:var(--lime);color:#11130b;border-color:var(--lime);font-weight:800}.button.small{padding:7px 10px;font-size:11px}.button.full{width:100%}.button.icon{width:37px;height:37px;padding:0;font-size:18px}.upload{border:1px dashed #484a58;background:#17181f;border-radius:12px;text-align:center;padding:15px 10px}.upload .symbol{margin:0 auto 7px;width:32px;height:32px;border-radius:9px;background:#292a34;display:grid;place-items:center;font-size:19px}.upload strong{display:block;font-size:12px}.upload .sub{margin-top:3px}.file-input{display:none}.file-list{display:flex;flex-direction:column;gap:7px;max-height:220px;overflow:auto}.file-item{display:flex;align-items:center;gap:9px;padding:8px;border:1px solid #292b35;border-radius:9px;background:#191a21;min-width:0}.thumb{width:34px;height:34px;display:grid;place-items:center;border-radius:7px;background:#292a34;color:var(--lime);flex:none}.file-info{flex:1;min-width:0}.file-name{font-size:11px;font-weight:650;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.file-size{font-size:10px;color:var(--muted)}.remove{border:0;background:none;color:#999;padding:4px;font-size:18px}.remove:hover{color:white}select{width:100%;background:#1c1d25;border:1px solid var(--line);border-radius:9px;color:#fff;padding:10px;outline:none}.toggle-line{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid #252630;gap:12px}.toggle-line:last-of-type{border:0}.toggle{appearance:none;width:36px;height:21px;border-radius:99px;background:#3a3b47;position:relative;cursor:pointer;flex:none}.toggle:before{content:"";position:absolute;left:3px;top:3px;width:15px;height:15px;border-radius:50%;background:white;transition:.16s}.toggle:checked{background:var(--lime)}.toggle:checked:before{transform:translateX(15px);background:#111}main{padding:28px clamp(16px,3vw,40px);display:flex;flex-direction:column;gap:25px;min-width:0}.topbar,.hero,.preview-label,.preview-controls{display:flex;align-items:center;justify-content:space-between;gap:14px}.status{display:inline-flex;align-items:center;gap:7px;font-size:10px;font-weight:800;letter-spacing:.08em;color:var(--lime)}.dot{width:7px;height:7px;background:var(--lime);border-radius:50%;box-shadow:0 0 12px #c9ff5866}.hero{align-items:end}.hero p{color:var(--muted);max-width:470px;margin-top:10px}.preview-frame{border:1px solid #30313b;border-radius:14px;overflow:hidden;background:#000;min-height:330px;box-shadow:0 18px 55px #0005}.wall{display:grid;gap:3px;min-height:330px;background:#000}.tile{position:relative;aspect-ratio:16/9;min-width:0;min-height:0;overflow:hidden;background:#121319}.tile video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#111}.badge{position:absolute;z-index:2;top:7px;left:7px;background:#0009;border:1px solid #ffffff24;border-radius:5px;padding:4px 6px;font-size:9px;letter-spacing:.08em}.placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:8px;background:radial-gradient(ellipse at center,#292a35,#111218 70%);color:#858796}.placeholder .big{font-size:clamp(23px,4vw,40px);color:#555766}.placeholder strong{font-size:10px;color:#c0c1cc}.placeholder span{font-size:9px;margin-top:4px}.preview-controls{margin-top:12px;flex-wrap:wrap}.controls{display:flex;gap:8px}.pill{border:1px solid var(--line);border-radius:8px;padding:7px 9px;color:#b6b7c3;font-size:10px}.metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.metric{border:1px solid var(--line);border-radius:12px;background:#121319;padding:14px}.metric strong{display:block;font-size:23px;letter-spacing:-.04em}.metric span{font-size:11px;color:var(--muted)}.hint{line-height:1.55}.empty{text-align:center;padding:8px;color:var(--muted);font-size:11px}.toast{position:fixed;bottom:18px;left:50%;transform:translate(-50%,15px);opacity:0;pointer-events:none;background:#f7f7fa;color:#111;padding:10px 15px;border-radius:10px;font-weight:700;font-size:12px;transition:.2s;z-index:10}.toast.show{opacity:1;transform:translate(-50%,0)}.preview-frame:fullscreen{border:0;border-radius:0;min-height:0;width:100vw;height:100vh}.preview-frame:fullscreen .wall{height:100vh;min-height:0}.preview-frame:fullscreen .tile{aspect-ratio:auto}.preview-frame:fullscreen .badge{opacity:.25}.preview-frame:fullscreen:hover .badge{opacity:1}
+@media(max-width:850px){.app{grid-template-columns:1fr}aside{border-right:0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;padding:18px}.brand,.settings,.files{grid-column:1/-1}main{padding:22px 18px}.file-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-height:none}}@media(max-width:540px){aside{display:flex}.hero{align-items:flex-start;flex-direction:column}.preview-frame,.wall{min-height:250px}.wall{min-height:250px}.metrics{gap:7px}.metric{padding:11px}.metric strong{font-size:19px}.file-list{display:flex;max-height:180px}}
+</style></head>
+<body><div class="app"><aside>
+<div class="brand"><div class="mark">↗</div> LOOPWALL <span style="font-size:10px;color:#777987;letter-spacing:.04em">STUDIO</span></div>
+<section class="section files"><div class="eyebrow">Media library</div><div class="upload" id="dropZone"><div class="symbol">＋</div><strong>Drop videos here</strong><div class="sub">or select files from your device</div><button class="button small" id="browseBtn" style="margin-top:11px">Browse videos</button><input id="fileInput" class="file-input" type="file" accept="video/*,.mp4,.webm,.mov,.m4v,.ogv" multiple></div><div class="section-head"><h2>Your videos</h2><span class="sub" id="libraryCount">0 files</span></div><div class="file-list" id="fileList"><div class="empty">Your videos will appear here.</div></div><p class="hint">Videos stay on your device in this browser session. Nothing is uploaded.</p></section>
+<section class="section settings"><div class="eyebrow">Wall settings</div><div><label class="sub" for="layout" style="display:block;margin-bottom:7px">Grid layout</label><select id="layout"><option value="1">1 × 1 · Single screen</option><option value="2">2 × 2 · Four screens</option><option value="3" selected>3 × 3 · Nine screens</option><option value="4">4 × 4 · Sixteen screens</option><option value="5">5 × 5 · Twenty-five screens</option></select></div><div><label class="sub" for="fit" style="display:block;margin-bottom:7px">Video fit</label><select id="fit"><option value="cover">Fill tile (crop edges)</option><option value="contain">Fit whole video</option></select></div>
+<div class="toggle-line"><div><h2>Loop videos</h2><div class="sub">Replay automatically</div></div><input id="loop" class="toggle" type="checkbox" checked></div><div class="toggle-line"><div><h2>Mute audio</h2><div class="sub">Best for autoplay</div></div><input id="mute" class="toggle" type="checkbox" checked></div><div class="toggle-line"><div><h2>Show tile labels</h2><div class="sub">Identify each screen</div></div><input id="labels" class="toggle" type="checkbox" checked></div><div class="toggle-line"><div><h2>Shuffle videos</h2><div class="sub">Mix tile assignments</div></div><input id="shuffle" class="toggle" type="checkbox"></div><button class="button full" id="assign">↻ Reassign videos</button></section>
+<p class="hint">LOOPWALL STUDIO · Video wall demo</p></aside>
+<main><div class="topbar"><div class="status"><span class="dot"></span> WALL READY</div><div class="controls"><span class="pill">LOCAL PREVIEW</span><button class="button icon" id="fullscreen" title="Fullscreen" aria-label="Fullscreen">⛶</button></div></div>
+<div class="hero"><div><div class="eyebrow">Your canvas</div><h1>Make space<br>for moving images.</h1><p>Build a living video wall. Add your clips, choose your grid, and let the visuals run on repeat.</p></div><button class="button primary" id="start">▶ Start wall</button></div>
+<section><div class="preview-label" style="margin-bottom:12px"><div><h2>Live preview</h2><div class="sub" style="margin-top:4px">Your clips fill the tiles in order and repeat if needed.</div></div><div class="status" id="playStatus"><span class="dot"></span> READY</div></div><div class="preview-frame" id="frame"><div class="wall" id="wall"></div></div><div class="preview-controls"><div class="controls"><button class="button" id="playPause">▶ Play</button><button class="button" id="restart">↺ Restart</button></div><div class="controls"><span class="pill" id="tileCount">9 TILES</span><span class="pill" id="videoCount">0 VIDEOS</span></div></div></section>
+<section class="metrics"><div class="metric"><strong id="metricVideos">0</strong><span>Videos in library</span></div><div class="metric"><strong id="metricTiles">9</strong><span>Active wall tiles</span></div><div class="metric"><strong id="metricMode">LOOP</strong><span>Playback mode</span></div></section><p class="hint">Tip: start playback before entering fullscreen. Browsers often block autoplay with sound, so muted playback is enabled by default.</p></main></div><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(() => {
+const $=id=>document.getElementById(id), state={files:[],playing:false,urls:new Set()};let toastTimer;
+function toast(msg){$('toast').textContent=msg;$('toast').classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').classList.remove('show'),2300)}
+function bytes(n){return n<1048576?`${Math.max(1,Math.round(n/1024))} KB`:`${(n/1048576).toFixed(1)} MB`}
+function addFiles(list){const files=[...list].filter(f=>f.type.startsWith('video/')||/\.(mp4|webm|mov|m4v|ogv)$/i.test(f.name));if(!files.length){toast('Choose a video such as MP4 or WebM.');return}let added=0;const seen=new Set(state.files.map(x=>x.key));for(const file of files){const key=`${file.name}-${file.size}-${file.lastModified}`;if(seen.has(key))continue;const url=URL.createObjectURL(file);state.urls.add(url);state.files.push({file,url,key});seen.add(key);added++}renderLibrary();renderWall();toast(added?`Added ${added} video${added===1?'':'s'}.`:'Those videos are already added.')}
+function renderLibrary(){$('libraryCount').textContent=`${state.files.length} file${state.files.length===1?'':'s'}`;$('metricVideos').textContent=state.files.length;$('videoCount').textContent=`${state.files.length} VIDEO${state.files.length===1?'':'S'}`;const list=$('fileList');list.replaceChildren();if(!state.files.length){const e=document.createElement('div');e.className='empty';e.textContent='Your videos will appear here.';list.append(e);return}state.files.forEach((entry,i)=>{const row=document.createElement('div');row.className='file-item';const thumb=document.createElement('div');thumb.className='thumb';thumb.textContent='▶';const info=document.createElement('div');info.className='file-info';const name=document.createElement('div');name.className='file-name';name.textContent=entry.file.name;name.title=entry.file.name;const size=document.createElement('div');size.className='file-size';size.textContent=bytes(entry.file.size);info.append(name,size);const remove=document.createElement('button');remove.className='remove';remove.textContent='×';remove.title='Remove video';remove.setAttribute('aria-label',`Remove ${entry.file.name}`);remove.onclick=()=>{const old=state.files.splice(i,1)[0];URL.revokeObjectURL(old.url);state.urls.delete(old.url);renderLibrary();renderWall();toast('Video removed.')};row.append(thumb,info,remove);list.append(row)})}
+function selectedFiles(){const a=[...state.files];if($('shuffle').checked){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}}return a}
+function renderWall(){const n=Number($('layout').value),count=n*n,files=selectedFiles(),wall=$('wall');wall.style.gridTemplateColumns=`repeat(${n},minmax(0,1fr))`;wall.style.gridTemplateRows=`repeat(${n},minmax(0,1fr))`;wall.replaceChildren();for(let i=0;i<count;i++){const tile=document.createElement('div');tile.className='tile';const badge=document.createElement('div');badge.className='badge';badge.textContent=`SCREEN ${String(i+1).padStart(2,'0')}`;badge.hidden=!$('labels').checked;tile.append(badge);const entry=files.length?files[i%files.length]:null;if(entry){const v=document.createElement('video');v.src=entry.url;v.loop=$('loop').checked;v.muted=$('mute').checked;v.playsInline=true;v.preload='metadata';v.autoplay=state.playing;v.style.objectFit=$('fit').value;v.setAttribute('aria-label',entry.file.name);v.addEventListener('error',()=>{v.style.display='none';toast(`Could not play ${entry.file.name}. Try MP4 or WebM.`)});tile.append(v);if(state.playing)v.play().catch(()=>{})}else{const p=document.createElement('div');p.className='placeholder';const big=document.createElement('div');big.className='big';big.textContent='↗';const strong=document.createElement('strong');strong.textContent='YOUR VIDEO GOES HERE';const small=document.createElement('span');small.textContent='Add a clip to bring this tile to life';p.append(big,strong,small);tile.append(p)}wall.append(tile)}$('tileCount').textContent=`${count} TILES`;$('metricTiles').textContent=count;$('metricMode').textContent=$('loop').checked?'LOOP':'ONCE';updateState()}
+function updateState(){$('playPause').textContent=state.playing?'Ⅱ Pause':'▶ Play';$('start').textContent=state.playing?'Ⅱ Pause wall':'▶ Start wall';$('playStatus').innerHTML=state.playing?'<span class="dot"></span> PLAYING':'<span class="dot" style="background:#9294a0;box-shadow:none"></span> READY';$('playStatus').style.color=state.playing?'var(--lime)':'var(--muted)'}
+async function setPlaying(on){state.playing=on;const videos=[...$('wall').querySelectorAll('video')];if(on){const result=await Promise.allSettled(videos.map(v=>v.play()));if(result.some(r=>r.status==='rejected')&&videos.length)toast('Some video could not start. Try muted playback or MP4/WebM.')}else videos.forEach(v=>v.pause());updateState()}
+$('browseBtn').onclick=()=>$('fileInput').click();$('fileInput').onchange=e=>{addFiles(e.target.files);e.target.value=''};$('dropZone').ondragover=e=>{e.preventDefault();$('dropZone').style.borderColor='var(--lime)'};$('dropZone').ondragleave=()=>$('dropZone').style.borderColor='';$('dropZone').ondrop=e=>{e.preventDefault();$('dropZone').style.borderColor='';addFiles(e.dataTransfer.files)};document.addEventListener('dragover',e=>e.preventDefault());document.addEventListener('drop',e=>{if(!e.target.closest('#dropZone'))e.preventDefault()});
+$('layout').onchange=renderWall;$('fit').onchange=()=> $('wall').querySelectorAll('video').forEach(v=>v.style.objectFit=$('fit').value);$('loop').onchange=()=>{$('wall').querySelectorAll('video').forEach(v=>v.loop=$('loop').checked);$('metricMode').textContent=$('loop').checked?'LOOP':'ONCE'};$('mute').onchange=()=> $('wall').querySelectorAll('video').forEach(v=>v.muted=$('mute').checked);$('labels').onchange=()=> $('wall').querySelectorAll('.badge').forEach(b=>b.hidden=!$('labels').checked);$('shuffle').onchange=renderWall;$('assign').onclick=()=>{renderWall();toast('Videos reassigned.')};$('playPause').onclick=()=>setPlaying(!state.playing);$('start').onclick=()=>setPlaying(!state.playing);$('restart').onclick=async()=>{const vids=[...$('wall').querySelectorAll('video')];vids.forEach(v=>{try{v.currentTime=0}catch(e){}});if(state.playing)await Promise.allSettled(vids.map(v=>v.play()));toast('Videos restarted.')};$('fullscreen').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await $('frame').requestFullscreen()}catch(e){toast('Fullscreen is not available in this browser.')}};document.addEventListener('fullscreenchange',()=>$('fullscreen').textContent=document.fullscreenElement?'×':'⛶');window.addEventListener('beforeunload',()=>state.urls.forEach(URL.revokeObjectURL));renderWall();
+})();
+</script></body></html>
+
+# LOOPWALL Studio
+
+A standalone browser-based video wall website.
+
+## Run it
+1. Open `index.html` in a modern browser.
+2. Click **Browse videos** or drag video files into the media area.
+3. Choose a grid layout and press **Start wall**.
+4. Click the fullscreen icon for a full-screen display.
+
+## Notes
+- Video files are loaded locally in your browser; they are not uploaded.
+- Muted autoplay is enabled by default because browsers often block autoplay with sound.
+- MP4 (H.264) and WebM are generally reliable formats, depending on browser support.
+- Files are not saved after the browser session; add them again after reloading.
+Uploading artwork…](
+
+https://github.com/user-attachments/assets/e5cde0a1-473e-4b97-8721-820cd10989a2
+
+)
 
 
 
 
 
 
-https://github.com/user-attachments/assets/6261d268-df36-4f78-9d0c-3d035698e1fe
-
-
-
-https://github.com/user-attachments/assets/bc4c18f8-7502-4691-a7f0-781d018da300
-
-
-
-https://github.com/user-attachments/assets/72f21421-31f9-48af-8825-7b72d3850aa0
-
-
-
-https://github.com/user-attachments/assets/dc98fcb4-20b2-46a0-b5a6-8a22fddacac2
-
-
-
-https://github.com/user-attachments/assets/8af37eb7-fe01-4c80-a2b1-e659286bcbcb
-
-
-
-https://github.com/user-attachments/assets/456cdd49-e233-4efb-928c-5fd0f09a5656
-
-
-[index.html](https://github.com/user-attachments/files/33535777/index.html)
-
-
-https://github.com/user-attachments/assets/a7227b8f-c26a-4c1a-9d8c-d93bacc6a65e
-
-
-
-https://github.com/user-attachments/assets/e0442581-953a-4ccb-8565-97b0717af31e
-
-
-
-https://github.com/user-attachments/assets/6be2fba4-544f-4850-8bbc-88b1eed421b5
-
-
-
-https://github.com/user-attachments/assets/d6a68b8e-218e-4d1e-b2e8-ad27cd568399
-
-
-
-https://github.com/user-attachments/assets/d75709e1-c5a8-4809-a371-28146f470e0c
-
-
-
-https://github.com/user-attachments/assets/201d705c-3c52-4fb6-a2d9-0ecd1ecbd585
-
-
-
-https://github.com/user-attachments/assets/42781635-37ce-4214-8634-fa556a818512
-
-
-
-https://github.com/user-attachments/assets/dd5801ee-8dd2-4c47-bd6c-14df7a9c5e81
 
 
 

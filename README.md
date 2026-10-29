@@ -32,22 +32,6 @@ $('browseBtn').onclick=()=>$('fileInput').click();$('fileInput').onchange=e=>{ad
 $('layout').onchange=renderWall;$('fit').onchange=()=> $('wall').querySelectorAll('video').forEach(v=>v.style.objectFit=$('fit').value);$('loop').onchange=()=>{$('wall').querySelectorAll('video').forEach(v=>v.loop=$('loop').checked);$('metricMode').textContent=$('loop').checked?'LOOP':'ONCE'};$('mute').onchange=()=> $('wall').querySelectorAll('video').forEach(v=>v.muted=$('mute').checked);$('labels').onchange=()=> $('wall').querySelectorAll('.badge').forEach(b=>b.hidden=!$('labels').checked);$('shuffle').onchange=renderWall;$('assign').onclick=()=>{renderWall();toast('Videos reassigned.')};$('playPause').onclick=()=>setPlaying(!state.playing);$('start').onclick=()=>setPlaying(!state.playing);$('restart').onclick=async()=>{const vids=[...$('wall').querySelectorAll('video')];vids.forEach(v=>{try{v.currentTime=0}catch(e){}});if(state.playing)await Promise.allSettled(vids.map(v=>v.play()));toast('Videos restarted.')};$('fullscreen').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await $('frame').requestFullscreen()}catch(e){toast('Fullscreen is not available in this browser.')}};document.addEventListener('fullscreenchange',()=>$('fullscreen').textContent=document.fullscreenElement?'×':'⛶');window.addEventListener('beforeunload',()=>state.urls.forEach(URL.revokeObjectURL));renderWall();
 })();
 </script></body></html>
-
-# LOOPWALL Studio
-
-A standalone browser-based video wall website.
-
-## Run it
-1. Open `index.html` in a modern browser.
-2. Click **Browse videos** or drag video files into the media area.
-3. Choose a grid layout and press **Start wall**.
-4. Click the fullscreen icon for a full-screen display.
-
-## Notes
-- Video files are loaded locally in your browser; they are not uploaded.
-- Muted autoplay is enabled by default because browsers often block autoplay with sound.
-- MP4 (H.264) and WebM are generally reliable formats, depending on browser support.
-- Files are not saved after the browser session; add them again after reloading.
 Uploading artwork…](
 
 https://github.com/user-attachments/assets/e5cde0a1-473e-4b97-8721-820cd10989a2

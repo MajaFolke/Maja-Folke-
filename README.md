@@ -26,9 +26,9 @@
 <script>
   // ===== Grid size — change these to resize the grid =====
   // Number of videos side by side (left to right)
-  const COLUMNS = 3;
+  const COLUMNS = 5;
   // Number of videos stacked (top to bottom)
-  const ROWS = 3;
+  const ROWS = 5;
   // Total cells = COLUMNS * ROWS. If there are fewer videos than cells,
   // the remaining cells repeat the last video.
 

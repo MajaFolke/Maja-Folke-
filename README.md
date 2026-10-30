@@ -15,10 +15,10 @@
   #grid {
     display: grid;
     /* columns/rows are set from COLUMNS and ROWS in the script below */
-    width: 50vw;
-    height: 50vh;
+    width: 100vw;
+    height: 100vh;
   }
-  video { width: 50%; height: 50%; min-width: 0; min-height: 0; object-fit: cover; display: block; }
+  video { width: 100%; height: 100%; min-width: 0; min-height: 0; object-fit: cover; display: block; }
 </style>
 </head>
 <body>
